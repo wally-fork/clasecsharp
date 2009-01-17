@@ -6,6 +6,6 @@ public interface IStack{
   // pop algo al stack.
   // decir cuantos te quedan
   void popStack();
-  void pushStack();
+  void pushStack(string elemento);
   void howMany();
 }
