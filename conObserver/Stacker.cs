@@ -31,6 +31,10 @@
 class Stacker{
   static void Main(){
     StackImpl1 stacy = new StackImpl1();
+    Observer StackObserver1 = new Observer();
+    Observer StackObserver2 = new Observer();
+    stacy.attach(StackObserver1);
+    stacy.attach(StackObserver2);
     stacy.howMany();
     stacy.pushStack("Stella");
     stacy.pushStack("was");
