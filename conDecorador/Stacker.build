@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="" default="build" basedir=".">
+  <description>The Hello World of build files.</description>
+  <property name="debug" value="true" overwrite="false" />
+  <target name="clean" description="remove all generated files">
+    <delete file="Stacker.exe" failonerror="false" />
+    <delete file="Stacker.pdb" failonerror="false" />
+  </target>
+  <target name="build" description="compiles the source code">
+    <csc target="exe" output="Stacker.exe" debug="${debug}">
+      <sources>
+	<include name="Stacker.cs" />
+	<include name="StackImpl1.cs" />
+	<include name="IStack.cs" />
+	<include name="IObserver.cs" />
+	<include name="Observer.cs" />
+	<include name="StackDecorator1.cs" />
+      </sources>
+    </csc>
+  </target>
+</project>
