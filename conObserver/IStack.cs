@@ -8,15 +8,15 @@ public interface IStack{
   // push algo al stack.
   // pop algo al stack.
   // decir cuantos te quedan
-  public void popStack();
-  public void pushStack(string elemento);
-  public void howMany();
+   void popStack();
+   void pushStack(string elemento);
+   void howMany();
 
-  // para el OBSERVER PATTERN
-  private string notify();
-  public void attach();
-  public void detach();
+  // // para el OBSERVER PATTERN
+   void notify(int aQuien);
+   void attach(Observer fisgon);
+   void detach(Observer fisgon);
   
-  // static private string state;
+  // private string state;
 
 }

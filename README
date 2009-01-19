@@ -1,6 +1,11 @@
+Ya acabamos el Observer Pattern. jojojojoj
+
+
+;;;;;;;;;;;
 Agregue las siguientes cosas:
 
 La interfaz IStack
 La implementación StackImpl1
 Una clase prueba Stacker
 y el buildfile que utilizo con NAnt
+

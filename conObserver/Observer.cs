@@ -1,11 +1,19 @@
 // Observer
 
+using System;
+
 public class Observer : IObserver{
   
   private string subject;
   private string state;
 
-  public void Update(){
-    // aqui va la implementacion del update del estado de la stack
+  // public void Observer(){
+  //   // jaja
+  // }
+
+  public void Update(string updatizacion){
+
+    System.Console.WriteLine("Haz recibido el update: {0}", updatizacion);
+
   }
 }
